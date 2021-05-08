@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-width: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-section {
+  margin-top: 2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.menu-section .dropmenus select {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.menu-section .dropmenus .authDropdown {
+  margin-right: 10px;
+}
+
+.menu-section .buttons {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.menu-section .buttons .submitBtn {
+  background-color: #e22e2e;
+  margin-right: 10px;
+  padding: 10px 15px;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.menu-section .buttons .resetBtn {
+  background-color: #1d2be7;
+  margin-left: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.quote-table {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 70%;
+}
+
+.quote-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.quote-table tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+.quote-table tr:hover {
+  background-color: #ddd;
+}
+
+.quote-table th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+  padding: 6px;
+}
+
+.quote-table td, .quote-table th {
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.quote-table td:nth-child(1) {
+  width: 15%;
+  padding: 5px;
+}
+
+.quote-table td:nth-child(2) {
+  width: 15%;
+  padding: 5px;
+}
+
+.quote-table td:nth-child(3) {
+  width: 50%;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 760px) {
+  .menu-section .dropmenus select {
+    padding: 2px;
+  }
+  .menu-section .dropmenus .authDropdown {
+    margin-right: 2px;
+  }
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead tr {
+    display: none;
+  }
+  tr {
+    border: 1px solid #ccc;
+  }
+  .quote-table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+  .quote-table td:nth-child(1) {
+    width: 100%;
+    position: relative;
+  }
+  .quote-table td:nth-child(2) {
+    width: 100%;
+  }
+  .quote-table td:nth-child(3) {
+    width: 100%;
+    position: relative;
+  }
+  td:nth-child(1):before {
+    content: "Author:";
+    padding-right: 6px;
+    font-weight: bold;
+  }
+  td:nth-child(2):before {
+    content: "Category:";
+    padding-right: 6px;
+    font-weight: bold;
+  }
+  td:nth-child(3):before {
+    content: "Quote:";
+    padding-right: 6px;
+    font-weight: bold;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

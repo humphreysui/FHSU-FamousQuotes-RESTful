@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-width: 480px; 
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  
+}
+.menu-section{
+  margin-top: 2rem;
+  align-self: center;
+  .dropmenus{
+    select {
+      padding: 10px;
+      font-weight: bold;
+    }
+    .authDropdown{
+        margin-right: 10px;
+      }
+    
+  }
+  
+  .buttons{
+    margin-top: 2rem;
+    text-align: center;
+
+    .submitBtn{
+      background-color: rgb(226, 46, 46);
+      margin-right: 10px;
+      padding: 10px 15px;
+      color: #fff;
+      border: none;
+      border-radius: 15px;
+      font-weight: bold;
+      
+    }
+
+    .resetBtn{
+      background-color: rgb(29, 43, 231);
+      margin-left: 10px;
+      padding: 10px 20px;
+      color: #fff;
+      border: none;
+      border-radius: 15px;
+      font-weight: bold;
+    }
+  }
+}
+.quote-table{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  align-self: center;
+  width: 70%;
+
+  table { 
+    width: 100%; 
+    border-collapse: collapse; 
+  }  
+  tr:nth-of-type(odd) { 
+    background: #eee; 
+  }
+  tr:hover {background-color: #ddd;}
+  th { 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+    padding: 6px;
+  }
+  td, th { 
+    border: 1px solid #ccc; 
+    text-align: left; 
+  }
+  td:nth-child(1){
+    width: 15%;
+    padding: 5px;
+  }
+  td:nth-child(2){
+    width: 15%;
+    padding: 5px;
+  }
+  td:nth-child(3){
+    width: 50%;
+    padding: 5px;
+  }  
+  
+}
+
+@media 
+only screen and (max-width: 760px) {
+
+  .menu-section{
+   
+    .dropmenus{
+      select {
+        padding: 2px;
+      }
+      .authDropdown{
+        margin-right: 2px;
+      }
+      
+    }
+  }
+  
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	thead tr { 
+		display: none;
+	}
+
+	tr { 
+    border: 1px solid #ccc; 
+  }
+
+  .quote-table td {
+    border:none;
+    border-bottom: 1px solid #eee; 
+    
+  }
+	.quote-table td:nth-child(1) {
+    width: 100%;
+    position: relative;
+     
+  }
+  .quote-table td:nth-child(2) {
+    width: 100%;
+  }
+  .quote-table td:nth-child(3) {
+    width: 100%; 
+    position: relative;
+     
+  }
+	
+ 	td:nth-child(1):before { 
+    content: "Author:"; 
+    padding-right: 6px;
+    font-weight: bold;
+  }
+	td:nth-child(2):before { 
+    content: "Category:"; 
+    padding-right: 6px;
+    font-weight: bold;
+  }
+	td:nth-child(3):before { 
+    content: "Quote:"; 
+    padding-right:6px;
+    font-weight: bold;
+  } 
+  
+}
